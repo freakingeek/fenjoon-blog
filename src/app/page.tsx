@@ -1,5 +1,6 @@
-import Container from "@/components/Container";
 import Link from "next/link";
+import Container from "@/components/Container";
+import SamandehiLogo from "@/components/SamandehiLogo";
 
 export default function HomePage() {
   return (
@@ -41,6 +42,8 @@ export default function HomePage() {
           </ul>
         </nav>
       </header>
+
+      <SamandehiLogo />
     </Container>
   );
 }
