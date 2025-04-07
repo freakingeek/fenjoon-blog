@@ -1,11 +1,6 @@
 import "./globals.css";
+import Providers from "@/providers";
 import type { Metadata } from "next";
-import { Vazirmatn } from "next/font/google";
-
-const vazirSans = Vazirmatn({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "فنجون",
@@ -18,8 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa-IR">
-      <body className={vazirSans.variable}>{children}</body>
+    <html dir="rtl" lang="fa-IR">
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
