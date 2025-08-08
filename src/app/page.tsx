@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/Container";
+import HomeSlider from "./components/HomeSlider";
 import SamandehiLogo from "@/components/SamandehiLogo";
 
 export default function HomePage() {
@@ -43,7 +44,8 @@ export default function HomePage() {
         </nav>
       </header>
 
-      <SamandehiLogo />
+      <HomeSlider className="mt-10" />
+      <SamandehiLogo className="mt-80" />
     </Container>
   );
 }
